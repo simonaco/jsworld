@@ -15,8 +15,8 @@ describe('ContactComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ContactComponent ],
-      imports: [
+    declarations: [ContactComponent],
+    imports: [
         NoopAnimationsModule,
         ReactiveFormsModule,
         MatButtonModule,
@@ -24,8 +24,8 @@ describe('ContactComponent', () => {
         MatInputModule,
         MatRadioModule,
         MatSelectModule,
-      ]
-    }).compileComponents();
+    ]
+}).compileComponents();
   }));
 
   beforeEach(() => {

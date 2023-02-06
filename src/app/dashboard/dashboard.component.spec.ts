@@ -15,8 +15,8 @@ describe('DashboardComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [DashboardComponent],
-      imports: [
+    declarations: [DashboardComponent],
+    imports: [
         NoopAnimationsModule,
         LayoutModule,
         MatButtonModule,
@@ -24,8 +24,8 @@ describe('DashboardComponent', () => {
         MatGridListModule,
         MatIconModule,
         MatMenuModule,
-      ]
-    }).compileComponents();
+    ]
+}).compileComponents();
   }));
 
   beforeEach(() => {

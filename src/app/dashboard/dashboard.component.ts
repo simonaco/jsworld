@@ -1,11 +1,19 @@
 import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { NgForOf, AsyncPipe } from '@angular/common';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+    selector: 'app-dashboard',
+    templateUrl: './dashboard.component.html',
+    styleUrls: ['./dashboard.component.css'],
+    standalone: true,
+    imports: [MatGridListModule, NgForOf, MatCardModule, MatButtonModule, MatMenuModule, MatIconModule, AsyncPipe]
 })
 export class DashboardComponent {
   /** Based on the screen size, switch from standard to one column per row */
