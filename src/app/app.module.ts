@@ -24,7 +24,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
-import { provideCloudinaryLoader } from '@angular/common';
+import { provideImgixLoader } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,7 @@ import { provideCloudinaryLoader } from '@angular/common';
     NavigationComponent,
     DashboardComponent,
     TableDashboardComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,9 +53,9 @@ import { provideCloudinaryLoader } from '@angular/common';
     MatInputModule,
     MatSelectModule,
     MatRadioModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
-  providers: [provideCloudinaryLoader("https://res.cloudinary.com/simonaco/")],
-  bootstrap: [AppComponent]
+  providers: [provideImgixLoader('https://best-places.imgix.net')],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
