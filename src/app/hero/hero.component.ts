@@ -11,7 +11,7 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 export class HeroComponent {
   images = [
     {
-      src: '/castelsanpietro.jpg',
+      src: '/castelsanpietro.jpeg',
       alt: 'Verona skyline',
     },
     {
@@ -31,5 +31,4 @@ export class HeroComponent {
       alt: 'Dolomiti mountains covered in snow',
     },
   ];
-  ngSrcset = '640w, 750w, 828w, 1080w, 1200w, 1920w, 2048w, 3840w';
 }
