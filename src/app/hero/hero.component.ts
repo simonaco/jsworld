@@ -11,7 +11,7 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 export class HeroComponent {
   images = [
     {
-      src: '/verona_sunset_2.jpg',
+      src: '/castelsanpietro.jpg',
       alt: 'Verona skyline',
     },
     {
